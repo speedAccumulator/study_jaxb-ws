@@ -1,2 +1,15 @@
-# study_jax-ws
-1、
+﻿# study_jaxb-ws
+在我看来，WSDL理解起来真真是反人类，也许是外文翻译成中文的过程是丢失的信息太多吧。反正各个节点的含义实在是太隐晦了。
+
+下面来总结一下各个节点的含义：
+
+types元素
+--定义了各种各样的数据类型
+message元素
+--将各种各样的数据类型组合起来，就变成了消息。消息可以在客户端和服务端之间进行传递
+portType元素和operation元素
+ --描述了Web服务的接口并定义了他的方法，portType元素和operation元素类似于Java接口和接口中定义的方法声明
+--接口方法operation元素的出入参只能是各种message元素。
+Binding元素
+--将portType元素和operation元素赋给一个特殊的协议和编码样式,类似于Java接口和接口中定义的方法的具体实现
+service元素负责将Internet地址赋给一个具体的绑定
