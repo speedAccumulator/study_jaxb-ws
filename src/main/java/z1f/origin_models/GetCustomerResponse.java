@@ -31,8 +31,8 @@ public class GetCustomerResponse {
     }
 
   
-    public void setCustomer(Customer sustomer) {
-        this.Customer = Customer;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
 }

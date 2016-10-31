@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://z1f/models", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package z1f.models;
+package z1f.origin_models;

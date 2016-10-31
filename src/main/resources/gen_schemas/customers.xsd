@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://z1f/models"
+           targetNamespace="http://z1f/models" elementFormDefault="qualified">
+
+  <xs:element name="getCustomerRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="custName" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="customer" type="tns:customer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="customer">
+    <xs:sequence>
+      <xs:element name="custId" type="xs:int"/>
+      <xs:element name="custName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

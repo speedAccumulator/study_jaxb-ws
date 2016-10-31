@@ -23,6 +23,25 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		return new ServletRegistrationBean(servlet, "/ws/*");
 	}
 
+
+
+	@Bean(name = "customers")
+	public DefaultWsdl11Definition defaultWsdl11Definition_1(XsdSchema customersSchema) {
+		System.out.println("222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222");
+		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+		wsdl11Definition.setPortTypeName("CustomersSchemaPort");
+		wsdl11Definition.setLocationUri("/ws");
+		wsdl11Definition.setTargetNamespace("http://z1f/models");
+		wsdl11Definition.setSchema(customersSchema);
+		return wsdl11Definition;
+	}
+	
+	@Bean
+	public XsdSchema customersSchema() {
+		System.out.println("fuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuck");
+		return new SimpleXsdSchema(new ClassPathResource("gen_schemas/customers.xsd"));
+	}
+
 	@Bean(name = "countries")
 	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
@@ -37,4 +56,8 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	public XsdSchema countriesSchema() {
 		return new SimpleXsdSchema(new ClassPathResource("schemas/countries.xsd"));
 	}
+
+	
+	
+
 }

@@ -95,7 +95,7 @@
 							
 							<!--这个节点指定了执行schemagen时，将把哪些java文件转化成相应的schema文件-->
 							<includes>
-								<include>z1f/origin_model/*.java</include>
+								<include>z1f/origin_models/*.java</include>
 							</includes>
 							
 							

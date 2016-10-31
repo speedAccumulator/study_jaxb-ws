@@ -18,20 +18,20 @@ public class CustomerRepository {
 	@PostConstruct
 	public void initData() {
 		Customer customer_1 = new Customer();
-		spain.setCustId(1);
-		spain.setCustName("jack");
+		customer_1.setCustId(1);
+		customer_1.setCustName("jack");
 
 		customers.add(customer_1);
 		
 		Customer customer_2 = new Customer();
-		spain.setCustId(2);
-		spain.setCustName("kevin");
+		customer_2.setCustId(2);
+		customer_2.setCustName("kevin");
 
 		customers.add(customer_2);
 		
-		Customer customer_2 = new Customer();
-		spain.setCustId(3);
-		spain.setCustName("Andrew");
+		Customer customer_3 = new Customer();
+		customer_3.setCustId(3);
+		customer_3.setCustName("Andrew");
 
 		customers.add(customer_3);
 
