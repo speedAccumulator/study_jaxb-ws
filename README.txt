@@ -48,7 +48,7 @@ package-info.java的作用总结
 		a)配置MessageDispatcherServlet
 		b)schema文件对应的XsdSchema
 		c)DefaultWsdl11Definition，持有XsdSchema
-3、配置service
+3、配置service上的注解
 	@Endpoint
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCustomerRequest")
 	@ResponsePayload
