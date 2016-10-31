@@ -36,3 +36,20 @@ package-info.java的作用总结
 2、声明友好类和包常量；暂时还没有见过
 
 3、提供包的整体注释说明:这个很容易理解
+
+
+===================================================================================================
+用这种方式发布webservice的步骤总结：
+1、建立domain模型(domain实体)对应的java类文件与schema文件
+		注意：
+			a)java类文件与schema文件可以相互转换
+			b)schema文件上的命名空间与在包上声明的命名空间是相对应的关系
+2、配置相应的bean：
+		a)配置MessageDispatcherServlet
+		b)schema文件对应的XsdSchema
+		c)DefaultWsdl11Definition，持有XsdSchema
+3、配置service
+	@Endpoint
+	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCustomerRequest")
+	@ResponsePayload
+	@RequestPayload
