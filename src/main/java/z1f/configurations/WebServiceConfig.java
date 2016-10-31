@@ -31,7 +31,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("CustomersSchemaPort");
 		wsdl11Definition.setLocationUri("/ws");
-		wsdl11Definition.setTargetNamespace("http://z1f/models");
+		wsdl11Definition.setTargetNamespace("http://aaaaaaaaaaaaaaaaaaaaaaaaa/models");
 		wsdl11Definition.setSchema(customersSchema);
 		return wsdl11Definition;
 	}

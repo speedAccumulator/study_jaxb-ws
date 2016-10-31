@@ -1,5 +1,5 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://z1f/models"
-           targetNamespace="http://z1f/models" elementFormDefault="qualified">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="http://z1f/models" xmlns:tns="http://z1f/models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:element name="getCustomerRequest">
     <xs:complexType>
@@ -24,4 +24,3 @@
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
-

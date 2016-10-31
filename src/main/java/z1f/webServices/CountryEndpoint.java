@@ -25,6 +25,7 @@ public class CountryEndpoint {
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCountryRequest")
 	@ResponsePayload
 	public GetCountryResponse getCountry(@RequestPayload GetCountryRequest request) {
+		System.out.println("bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody bloody nameSpace");
 		GetCountryResponse response = new GetCountryResponse();
 		response.setCountry(countryRepository.findCountry(request.getName()));
 
